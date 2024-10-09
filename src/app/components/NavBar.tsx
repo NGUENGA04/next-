@@ -18,7 +18,7 @@ export default function NavBar(){
         setisOpen(!isOpen)
     }
     return (
-        <header className="h-screen overflow-hidden">
+        <header className="">
             <nav className="w-100 bg-slate-400 flex justify-between py-4 " >
                 <div className="mx-20">
                     <Link href="/">AB AGENCY</Link>
@@ -34,7 +34,7 @@ export default function NavBar(){
                     </button>
                 </div>
             </nav>
-            <div className="flex justify-end ">
+            <div className="flex justify-end  fixed left-0 right-0 ">
                 {isOpen && (
                     <div className="bg-stone-700 text-white w-1/3 hidden max-lg:block h-screen animate-fade-left">
                           {navItems.map((item, index) => (
